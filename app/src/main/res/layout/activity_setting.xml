@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Setting">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/gender" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonGender"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:onClick="onToggleButtonGender"
+                android:textAllCaps="false"
+                android:textOff="@string/male"
+                android:textOn="@string/female" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <TextView
+                android:id="@+id/textViewWeightUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/weight_unit" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonWeightUnit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:onClick="onToggleButtonWeightUnit"
+                android:textAllCaps="false"
+                android:textOff="@string/lbs"
+                android:textOn="@string/kgs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <TextView
+                android:id="@+id/textViewWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/weight" />
+
+            <EditText
+                android:id="@+id/editTextWeightNum"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:ems="10"
+                android:inputType="number|numberDecimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+            <TextView
+                android:id="@+id/textViewWaterUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/water_unit" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonWaterUnit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:onClick="onToggleButtonWaterUnit"
+                android:textAllCaps="false"
+                android:textOff="@string/oz"
+                android:textOn="@string/ml" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+            <TextView
+                android:id="@+id/textViewWaterAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/water_quantity" />
+
+            <EditText
+                android:id="@+id/editTextWaterAmount"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+            <TextView
+                android:id="@+id/textViewNotification"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/notification" />
+
+            <Switch
+                android:id="@+id/switchNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickNotificationButton"
+                android:textColorLink="@color/colorMain" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LayoutIntervalNotification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/textViewInterval"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/interval" />
+
+            <EditText
+                android:id="@+id/editTextInterval"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:ems="10"
+                android:hint="00:00"
+                android:inputType="time" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutIntervalNotification">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_rounded"
+                android:onClick="onClickSaveButton"
+                android:text="@string/save"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:onClick="onClickAboutButton"
+                android:text="@string/about"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonBackToHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:onClick="onClickBackHomeButton"
+                android:text="@string/backHome"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MyWaterDrinkingApp</string>
+    <string name="settings">Settings</string>
+    <string name="water_unit">Your Water Unit</string>
+    <string name="oz">oz</string>
+    <string name="ml">ml</string>
+    <string name="water_quantity">Your Daily Quantity of Water</string>
+    <string name="glass_size">Your Default Water Glass Size</string>
+    <string name="gender">Your Gender</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="weight">Your Weight</string>
+    <string name="weight_unit">Your Weight Unit</string>
+    <string name="lbs">lbs</string>
+    <string name="kgs">kgs</string>
+    <string name="notification">Notification allowed</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="water_consume">Today I still need to drink</string>
+    <string name="drink">Drink</string>
+    <string name="history">History</string>
+    <string name="backHome">Home</string>
+    <string name="save">Save</string>
+    <string name="about">About</string>
+    <string name="intro">This Water Drinking App is made by Kiet Nguyen</string>
+    <string name="congrat">Congratulation! You have achieved your goal today!</string>
+    <string name="undo">Undo</string>
+    <string name="reset">Reset</string>
+    <string name="interval">Interval between Notifications</string>
+    <string name="clear">Delete History</string>
+</resources>
