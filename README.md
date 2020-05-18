@@ -6,10 +6,6 @@ This native Android app is created to help users drink more water because people
 - Track water amount user drink during the day with visual chart
 - Track history record of previous consumption periods (charts)
 - Allow users to set up notification/ interval to remind them to drink water
-## How I built it
-- 
-## Challenges I ran into
+## Screenshot of app demo
+Please go [here](https://github.com/alvinnguyen0312/HydrationReminder/tree/master/Activity%20Screenshot).
 
-## What I learnt
-
-## What's next for Hydration Reminder
